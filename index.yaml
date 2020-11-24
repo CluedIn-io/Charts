@@ -3,7 +3,23 @@ entries:
   cluedin:
   - apiVersion: v1
     appVersion: 3.2.0
-    created: "2020-10-08T11:47:16.249226829Z"
+    created: "2020-11-24T17:02:45.779629246Z"
+    dependencies:
+    - condition: elasticsearch.enabled, global.elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      tags:
+      - linux
+      version: 7.6.2
+    description: Deploys the CluedIn Application
+    digest: c7f16285ab7c5942019cc1ef2dbacb329e7c002872370e02b5fd1c9c67d0c9be
+    name: cluedin
+    urls:
+    - charts/cluedin/3.2.0/cluedin-3.2.0.tgz
+    version: 3.2.0
+  - apiVersion: v1
+    appVersion: 3.2.0
+    created: "2020-11-24T17:02:45.773873344Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -19,7 +35,7 @@ entries:
     version: 3.2.0-beta.23
   - apiVersion: v1
     appVersion: 3.1.0
-    created: "2020-10-08T11:47:16.20473437Z"
+    created: "2020-11-24T17:02:45.769073143Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -33,4 +49,4 @@ entries:
     urls:
     - charts/cluedin/3.1.1/cluedIn-3.1.1.tgz
     version: 3.1.1
-generated: "2020-10-08T11:47:16.325365249Z"
+generated: "2020-11-24T17:02:45.868423571Z"
