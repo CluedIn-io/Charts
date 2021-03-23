@@ -3,7 +3,7 @@ entries:
   cluedin:
   - apiVersion: v2
     appVersion: 3.2.2
-    created: "2021-03-19T13:24:56.036948988Z"
+    created: "2021-03-23T13:56:40.738750349Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -36,7 +36,7 @@ entries:
     version: 3.2.2-beta.31
   - apiVersion: v2
     appVersion: 3.2.2
-    created: "2021-03-19T13:24:55.991893725Z"
+    created: "2021-03-23T13:56:40.708166243Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -69,7 +69,7 @@ entries:
     version: 3.2.2-beta.29
   - apiVersion: v1
     appVersion: 3.2.0
-    created: "2021-03-19T13:24:55.945308563Z"
+    created: "2021-03-23T13:56:40.666385188Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -78,14 +78,14 @@ entries:
       - linux
       version: 7.6.2
     description: Deploys the CluedIn Application
-    digest: 294c6dcf925b986d287da5949aeeb4772d342bbd3689f7794c72a3f084589766
+    digest: 0170077b53580f7d8ab99470bfbca19990c346b32eb57618b8c00d5e060c7f6b
     name: cluedin
     urls:
     - charts/cluedin/3.2.1/cluedin-3.2.1.tgz
     version: 3.2.1
   - apiVersion: v1
     appVersion: 3.2.0
-    created: "2021-03-19T13:24:55.932493474Z"
+    created: "2021-03-23T13:56:40.661900129Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -101,7 +101,7 @@ entries:
     version: 3.2.0
   - apiVersion: v1
     appVersion: 3.2.0
-    created: "2021-03-19T13:24:55.927235578Z"
+    created: "2021-03-23T13:56:40.656299655Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -117,7 +117,7 @@ entries:
     version: 3.2.0-beta.23
   - apiVersion: v1
     appVersion: 3.1.0
-    created: "2021-03-19T13:24:55.921422783Z"
+    created: "2021-03-23T13:56:40.651102886Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -131,4 +131,4 @@ entries:
     urls:
     - charts/cluedin/3.1.1/cluedIn-3.1.1.tgz
     version: 3.1.1
-generated: "2021-03-19T13:24:56.120892418Z"
+generated: "2021-03-23T13:56:40.793658777Z"
