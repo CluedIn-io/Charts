@@ -3,7 +3,40 @@ entries:
   cluedin:
   - apiVersion: v2
     appVersion: 3.2.2
-    created: "2021-03-23T13:56:40.738750349Z"
+    created: "2021-04-12T10:07:18.993747578Z"
+    dependencies:
+    - condition: elasticsearch.enabled, global.elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.11.1
+    - alias: monitoring
+      condition: monitoring.enabled, global.monitoring.enabled
+      name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 13.13.1
+    - condition: rabbitmq.enabled, global.rabbitmq.enabled
+      name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami
+      version: 8.10.2
+    - condition: openrefine.enabled, global.openrefine.enabled
+      name: openrefine
+      repository: file://../openrefine
+      version: 0.1.0
+    - condition: cluedincontroller.enabled, global.cluedincontroller.enabled
+      name: cluedincontroller
+      repository: file://../controller
+      version: 0.1.0
+    description: Deploys the CluedIn Application
+    digest: 4b26bf10778dccc2ebc7eb4a44061d551cfb1b7f9a767c0f27318b074c9377e0
+    icon: https://www.cluedin.net/favicon.png
+    kubeVersion: '>=1.16.0-0'
+    name: cluedin
+    urls:
+    - charts/cluedin/3.2.2/cluedin-3.2.2-beta.36.tgz
+    version: 3.2.2-beta.36
+  - apiVersion: v2
+    appVersion: 3.2.2
+    created: "2021-04-12T10:07:18.964760138Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -36,7 +69,7 @@ entries:
     version: 3.2.2-beta.31
   - apiVersion: v2
     appVersion: 3.2.2
-    created: "2021-03-23T13:56:40.708166243Z"
+    created: "2021-04-12T10:07:18.933718289Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -69,7 +102,7 @@ entries:
     version: 3.2.2-beta.29
   - apiVersion: v1
     appVersion: 3.2.0
-    created: "2021-03-23T13:56:40.666385188Z"
+    created: "2021-04-12T10:07:18.886441061Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -85,7 +118,7 @@ entries:
     version: 3.2.1
   - apiVersion: v1
     appVersion: 3.2.0
-    created: "2021-03-23T13:56:40.661900129Z"
+    created: "2021-04-12T10:07:18.881477537Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -101,7 +134,7 @@ entries:
     version: 3.2.0
   - apiVersion: v1
     appVersion: 3.2.0
-    created: "2021-03-23T13:56:40.656299655Z"
+    created: "2021-04-12T10:07:18.867371969Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -117,7 +150,7 @@ entries:
     version: 3.2.0-beta.23
   - apiVersion: v1
     appVersion: 3.1.0
-    created: "2021-03-23T13:56:40.651102886Z"
+    created: "2021-04-12T10:07:18.862242345Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -131,4 +164,4 @@ entries:
     urls:
     - charts/cluedin/3.1.1/cluedIn-3.1.1.tgz
     version: 3.1.1
-generated: "2021-03-23T13:56:40.793658777Z"
+generated: "2021-04-12T10:07:19.069524942Z"
