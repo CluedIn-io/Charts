@@ -2,8 +2,41 @@ apiVersion: v1
 entries:
   cluedin:
   - apiVersion: v2
+    appVersion: 3.2.3
+    created: "2021-06-17T16:46:55.0998056Z"
+    dependencies:
+    - condition: elasticsearch.enabled, global.elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.11.1
+    - alias: monitoring
+      condition: monitoring.enabled, global.monitoring.enabled
+      name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 13.13.1
+    - condition: rabbitmq.enabled, global.rabbitmq.enabled
+      name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami
+      version: 8.10.2
+    - condition: openrefine.enabled, global.openrefine.enabled
+      name: openrefine
+      repository: file://../openrefine
+      version: 0.1.0
+    - condition: cluedincontroller.enabled, global.cluedincontroller.enabled
+      name: cluedincontroller
+      repository: file://../controller
+      version: 0.1.0
+    description: Deploys the CluedIn Application
+    digest: 46c0ad83dd3d58cdd336ced480c3a83ef14bf9c93fca6c346faed3e612c922c2
+    icon: https://www.cluedin.net/favicon.png
+    kubeVersion: '>=1.18.0-0'
+    name: cluedin
+    urls:
+    - charts/cluedin/3.2.3/cluedin-3.2.3.tgz
+    version: 3.2.3
+  - apiVersion: v2
     appVersion: 3.2.2
-    created: "2021-05-06T08:50:36.147399286Z"
+    created: "2021-06-17T16:46:55.064468789Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -36,7 +69,7 @@ entries:
     version: 3.2.2
   - apiVersion: v2
     appVersion: 3.2.2
-    created: "2021-05-06T08:50:36.108346414Z"
+    created: "2021-06-17T16:46:55.02578534Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -69,7 +102,7 @@ entries:
     version: 3.2.2-beta.37
   - apiVersion: v2
     appVersion: 3.2.2
-    created: "2021-05-06T08:50:36.071730109Z"
+    created: "2021-06-17T16:46:54.988686404Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -102,7 +135,7 @@ entries:
     version: 3.2.2-beta.36
   - apiVersion: v2
     appVersion: 3.2.2
-    created: "2021-05-06T08:50:36.027774703Z"
+    created: "2021-06-17T16:46:54.950453287Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -135,7 +168,7 @@ entries:
     version: 3.2.2-beta.31
   - apiVersion: v2
     appVersion: 3.2.2
-    created: "2021-05-06T08:50:35.976435397Z"
+    created: "2021-06-17T16:46:54.912789511Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -168,7 +201,7 @@ entries:
     version: 3.2.2-beta.29
   - apiVersion: v1
     appVersion: 3.2.0
-    created: "2021-05-06T08:50:35.903443683Z"
+    created: "2021-06-17T16:46:54.874830713Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -184,7 +217,7 @@ entries:
     version: 3.2.1
   - apiVersion: v1
     appVersion: 3.2.0
-    created: "2021-05-06T08:50:35.891688642Z"
+    created: "2021-06-17T16:46:54.869636544Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -200,7 +233,7 @@ entries:
     version: 3.2.0
   - apiVersion: v1
     appVersion: 3.2.0
-    created: "2021-05-06T08:50:35.886215816Z"
+    created: "2021-06-17T16:46:54.861739783Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -216,7 +249,7 @@ entries:
     version: 3.2.0-beta.23
   - apiVersion: v1
     appVersion: 3.1.0
-    created: "2021-05-06T08:50:35.877226037Z"
+    created: "2021-06-17T16:46:54.85607148Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -230,4 +263,4 @@ entries:
     urls:
     - charts/cluedin/3.1.1/cluedIn-3.1.1.tgz
     version: 3.1.1
-generated: "2021-05-06T08:50:36.23367992Z"
+generated: "2021-06-17T16:46:55.14948093Z"
