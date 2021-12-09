@@ -3,7 +3,7 @@ entries:
   cluedin:
   - apiVersion: v2
     appVersion: 3.2.5
-    created: "2021-12-08T16:49:30.846230202Z"
+    created: "2021-12-09T10:24:55.463665444Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -27,7 +27,7 @@ entries:
       repository: file://../controller
       version: 0.1.0
     description: Deploys the CluedIn Application
-    digest: a59462e85f3e3a76ba0cb9fe5471c35a6ae2343486fa3f2e068586e21c5a9d88
+    digest: 2523c990a1a964de8dd8ea6a53d3f57ce5c13f5c760d7f74dbbe0de777611533
     icon: https://www.cluedin.net/favicon.png
     kubeVersion: '>=1.18.0-0'
     name: cluedin
@@ -36,7 +36,7 @@ entries:
     version: 3.2.5
   - apiVersion: v2
     appVersion: 3.2.5
-    created: "2021-12-08T16:49:30.806889338Z"
+    created: "2021-12-09T10:24:55.4245838Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -69,7 +69,7 @@ entries:
     version: 3.2.5-beta.138
   - apiVersion: v2
     appVersion: 3.2.4
-    created: "2021-12-08T16:49:30.767551873Z"
+    created: "2021-12-09T10:24:55.384724246Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -102,7 +102,7 @@ entries:
     version: 3.2.4
   - apiVersion: v2
     appVersion: 3.2.3
-    created: "2021-12-08T16:49:30.729456517Z"
+    created: "2021-12-09T10:24:55.345629502Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -135,7 +135,7 @@ entries:
     version: 3.2.4-beta.17
   - apiVersion: v2
     appVersion: 3.2.3
-    created: "2021-12-08T16:49:30.690935758Z"
+    created: "2021-12-09T10:24:55.309993406Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -168,7 +168,7 @@ entries:
     version: 3.2.4-beta.14
   - apiVersion: v2
     appVersion: 3.2.3
-    created: "2021-12-08T16:49:30.6525348Z"
+    created: "2021-12-09T10:24:55.266581402Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -201,7 +201,7 @@ entries:
     version: 3.2.3
   - apiVersion: v2
     appVersion: 3.2.2
-    created: "2021-12-08T16:49:30.612892634Z"
+    created: "2021-12-09T10:24:55.230039893Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -234,7 +234,7 @@ entries:
     version: 3.2.2
   - apiVersion: v2
     appVersion: 3.2.2
-    created: "2021-12-08T16:49:30.573779871Z"
+    created: "2021-12-09T10:24:55.185191069Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -267,7 +267,7 @@ entries:
     version: 3.2.2-beta.37
   - apiVersion: v2
     appVersion: 3.2.2
-    created: "2021-12-08T16:49:30.533960603Z"
+    created: "2021-12-09T10:24:55.150096181Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -300,7 +300,7 @@ entries:
     version: 3.2.2-beta.36
   - apiVersion: v2
     appVersion: 3.2.2
-    created: "2021-12-08T16:49:30.494480138Z"
+    created: "2021-12-09T10:24:55.106313772Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -333,7 +333,7 @@ entries:
     version: 3.2.2-beta.31
   - apiVersion: v2
     appVersion: 3.2.2
-    created: "2021-12-08T16:49:30.450805144Z"
+    created: "2021-12-09T10:24:55.062793166Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -366,7 +366,7 @@ entries:
     version: 3.2.2-beta.29
   - apiVersion: v1
     appVersion: 3.2.0
-    created: "2021-12-08T16:49:30.405783141Z"
+    created: "2021-12-09T10:24:55.017990543Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -382,7 +382,7 @@ entries:
     version: 3.2.1
   - apiVersion: v1
     appVersion: 3.2.0
-    created: "2021-12-08T16:49:30.392681853Z"
+    created: "2021-12-09T10:24:55.013008173Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -398,7 +398,7 @@ entries:
     version: 3.2.0
   - apiVersion: v1
     appVersion: 3.2.0
-    created: "2021-12-08T16:49:30.387238317Z"
+    created: "2021-12-09T10:24:55.001680216Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -414,7 +414,7 @@ entries:
     version: 3.2.0-beta.23
   - apiVersion: v1
     appVersion: 3.1.0
-    created: "2021-12-08T16:49:30.380435271Z"
+    created: "2021-12-09T10:24:54.997082652Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -428,4 +428,4 @@ entries:
     urls:
     - charts/cluedin/3.1.1/cluedIn-3.1.1.tgz
     version: 3.1.1
-generated: "2021-12-08T16:49:30.887775381Z"
+generated: "2021-12-09T10:24:55.494459873Z"
