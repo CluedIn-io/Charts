@@ -464,7 +464,7 @@ entries:
   cluedin-application:
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2022-02-15T17:17:37.793769071Z"
+    created: "2022-02-16T14:56:55.115088227Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -494,7 +494,7 @@ entries:
   cluedin-infrastructure:
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2022-02-15T17:17:37.744286231Z"
+    created: "2022-02-16T14:56:55.072618024Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -549,7 +549,7 @@ entries:
   cluedin-platform:
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2022-02-15T17:17:37.641840349Z"
+    created: "2022-02-16T14:56:54.983480575Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -577,4 +577,4 @@ entries:
     urls:
     - charts/cluedin-platform/1.0.0/cluedin-platform-1.0.0-beta.22.tgz
     version: 1.0.0-beta.22
-generated: "2022-02-15T17:17:37.784613646Z"
+generated: "2022-02-16T14:56:55.107404635Z"
