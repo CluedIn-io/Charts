@@ -24,44 +24,56 @@ List all repositories currently installed.
 $ helm repo list
 ```
 
+Pull latest releases from the remote collection.
+
+```shell
+$ helm repo update
+```
+
 ## Examples of Helm usage
 
-Search repositories for charts called `cluedin` in the chart repository and display the versions.
+Search repositories for charts called `cluedin-platform` in the chart repository and display the versions.
 
 ```shell
-$ helm search repo cluedin
+$ helm search repo cluedin-platform
 ```
 
-Search repositories for charts called `cluedin` but include pre-release/development versions of the charts.
+Search repositories for charts called `cluedin-platform` but include pre-release/development versions of the charts.
 
 ```shell
-$ helm search repo cluedin --devel
+$ helm search repo cluedin-platform --devel
 ```
 
-Installing the chart into a release called `cluedin` into the cluster.
+Installing the chart into a release called `cluedin-platform` into the cluster.
 
 ```shell
-$ helm install cluedin cluedin/cluedin
+$ helm install cluedin-platform cluedin/cluedin-platform
 ```
 
 Installing with a custom `values.yaml`.
 
 ```shell
-$ helm install cluedin cluedin/cluedin --values values.yaml
+$ helm install cluedin-platform cluedin/cluedin-platform --values values.yaml
 ```
 
 Installing a specific version of the chart.
 
 ```shell
-$ helm install cluedin cluedin/cluedin --version 3.2.0
+$ helm install cluedin-platform cluedin/cluedin-platform --version 1.0.0
 ```
 
 ## Cleanup
 
-Uninstall the `cluedin` release from the cluster.
+List existing releases installed on the cluster.
 
 ```shell
-$ helm uninstall cluedin
+$ helm ls -a -n cluedin
+```
+
+Uninstall the `cluedin-platform` release from the cluster.
+
+```shell
+$ helm uninstall cluedin-platform
 ```
 
 Remove `cluedin` repository from your local repository collection.
