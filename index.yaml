@@ -497,7 +497,7 @@ entries:
   cluedin-application:
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2022-02-21T22:10:09.278806465Z"
+    created: "2022-02-22T10:57:04.446514253Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -513,7 +513,7 @@ entries:
       repository: file://../openrefine
       version: 1.x.x
     description: Deploys the applications for the CluedIn platform
-    digest: 5fc2b6fce387d6cd6942fed83f36f2f80194a52d2eba512eaee2893ff9651cbb
+    digest: eaa52d4a82c0321e6f58a65b769249db62ca6f98dac05980d9e13ee0aeb04493
     icon: https://www.cluedin.net/favicon.png
     kubeVersion: '>=1.18.0-0'
     maintainers:
@@ -526,7 +526,7 @@ entries:
     version: 1.0.0
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2022-02-21T22:10:09.262272546Z"
+    created: "2022-02-22T10:57:04.436450443Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -556,7 +556,7 @@ entries:
   cluedin-infrastructure:
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2022-02-21T22:10:09.166809764Z"
+    created: "2022-02-22T10:57:04.381365656Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -597,7 +597,7 @@ entries:
       repository: https://charts.jetstack.io
       version: v1.6.x
     description: Deploys infrastructure for CluedIn Platform
-    digest: 58aba83772508c987be8488351cdcef88d855dd6f365bbe06eafbb8059fb4da1
+    digest: 7b9d18f308fbe0c03addcfc69300515a0141753d85a5ce251c6916a365346d46
     icon: https://www.cluedin.net/favicon.png
     kubeVersion: '>=1.18.0-0'
     maintainers:
@@ -610,7 +610,7 @@ entries:
     version: 1.0.0
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2022-02-21T22:10:09.081815756Z"
+    created: "2022-02-22T10:57:04.325567618Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -665,7 +665,7 @@ entries:
   cluedin-platform:
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2022-02-21T22:10:08.934573503Z"
+    created: "2022-02-22T10:57:04.2190386Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -682,7 +682,7 @@ entries:
       repository: file://../cluedin-application
       version: x.x.x
     description: Deploys all parts of the CluedIn platform
-    digest: 3db9c93490433617a361dea6a102024b5a9dd706f89daea7db11bccfe7299f2d
+    digest: 019c91b304e7a4a8d8dbf866029a7157009fa1947873b6e9539eb3afc61d2220
     icon: https://www.cluedin.net/favicon.png
     kubeVersion: '>=1.18.0-0'
     maintainers:
@@ -695,7 +695,7 @@ entries:
     version: 1.0.0
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2022-02-21T22:10:08.865526709Z"
+    created: "2022-02-22T10:57:04.145997046Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -723,4 +723,4 @@ entries:
     urls:
     - charts/cluedin-platform/1.0.0/cluedin-platform-1.0.0-beta.22.tgz
     version: 1.0.0-beta.22
-generated: "2022-02-21T22:10:09.247133938Z"
+generated: "2022-02-22T10:57:04.427352701Z"
