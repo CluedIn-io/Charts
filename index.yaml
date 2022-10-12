@@ -497,7 +497,36 @@ entries:
   cluedin-application:
   - apiVersion: v2
     appVersion: "2022.06"
-    created: "2022-10-12T15:53:13.392404147Z"
+    created: "2022-10-12T15:59:01.898217336Z"
+    dependencies:
+    - alias: common
+      name: cluedin-common
+      repository: file://../cluedin-common
+      version: 1.x.x
+    - alias: cluedincontroller
+      condition: cluedincontroller.enabled, global.cluedincontroller.enabled
+      name: cluedin-controller
+      repository: file://../cluedin-controller
+      version: 1.x.x
+    - condition: openrefine.enabled, global.openrefine.enabled
+      name: openrefine
+      repository: file://../openrefine
+      version: 1.x.x
+    description: Deploys the applications for the CluedIn platform
+    digest: e6c3f2fabd70effde5211318c315783d9f3790d1e18c1cd74126d610ef73c71b
+    icon: https://www.cluedin.net/favicon.png
+    kubeVersion: '>=1.21.0-0'
+    maintainers:
+    - email: support@cluedin.com
+      name: Support
+    name: cluedin-application
+    type: application
+    urls:
+    - charts/cluedin-application/1.3.4/cluedin-application-1.3.4.tgz
+    version: 1.3.4
+  - apiVersion: v2
+    appVersion: "2022.06"
+    created: "2022-10-12T15:59:01.890025437Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -526,7 +555,7 @@ entries:
     version: 1.3.3
   - apiVersion: v2
     appVersion: "2022.06"
-    created: "2022-10-12T15:53:13.38393741Z"
+    created: "2022-10-12T15:59:01.882317532Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -555,7 +584,7 @@ entries:
     version: 1.3.2
   - apiVersion: v2
     appVersion: "2022.06"
-    created: "2022-10-12T15:53:13.375298375Z"
+    created: "2022-10-12T15:59:01.87514882Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -584,7 +613,7 @@ entries:
     version: 1.3.1
   - apiVersion: v2
     appVersion: "2022.06"
-    created: "2022-10-12T15:53:13.324002161Z"
+    created: "2022-10-12T15:59:01.866779323Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -613,7 +642,7 @@ entries:
     version: 1.3.0
   - apiVersion: v2
     appVersion: 3.3.2
-    created: "2022-10-12T15:53:13.317157912Z"
+    created: "2022-10-12T15:59:01.858620024Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -642,7 +671,7 @@ entries:
     version: 1.2.0
   - apiVersion: v2
     appVersion: 3.3.1
-    created: "2022-10-12T15:53:13.308916474Z"
+    created: "2022-10-12T15:59:01.849880231Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -671,7 +700,7 @@ entries:
     version: 1.1.0
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2022-10-12T15:53:13.30153603Z"
+    created: "2022-10-12T15:59:01.843178414Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -700,7 +729,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2022-10-12T15:53:13.295194077Z"
+    created: "2022-10-12T15:59:01.835477508Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -729,7 +758,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2022-10-12T15:53:13.287428036Z"
+    created: "2022-10-12T15:59:01.82642812Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -758,7 +787,7 @@ entries:
     version: 1.0.0
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2022-10-12T15:53:13.279113798Z"
+    created: "2022-10-12T15:59:01.819602804Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -788,7 +817,61 @@ entries:
   cluedin-infrastructure:
   - apiVersion: v2
     appVersion: "2022.06"
-    created: "2022-10-12T15:53:13.214325385Z"
+    created: "2022-10-12T15:59:01.748882774Z"
+    dependencies:
+    - condition: elasticsearch.enabled, global.elasticsearch.enabled
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.14.x
+    - alias: monitoring
+      condition: monitoring.enabled, global.monitoring.enabled
+      name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 39.x.x
+    - condition: neo4j.enabled, global.neo4j.enabled
+      name: neo4j
+      repository: file://../neo4j
+      version: 4.4.3-internal
+    - condition: rabbitmq.enabled, global.rabbitmq.enabled
+      name: rabbitmq
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.3.x
+    - condition: redis.enabled, global.redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.13.x
+    - condition: seq.enabled, global.seq.enabled
+      name: seq
+      repository: https://helm.datalust.co
+      version: 2022.1.x
+    - alias: mssql
+      condition: mssql.enabled, global.mssql.enabled
+      name: mssql-linux
+      repository: file://../mssql-linux
+      version: 0.12.x
+    - condition: haproxy-ingress.enabled, global.haproxy-ingress.enabled
+      name: haproxy-ingress
+      repository: https://haproxy-ingress.github.io/charts
+      version: 0.13.x
+    - condition: cert-manager.enabled, global.cert-manager.enabled
+      name: cert-manager
+      repository: https://charts.jetstack.io
+      version: v1.8.x
+    description: Deploys infrastructure for CluedIn Platform
+    digest: a5188968d6b7f3ae52d409369a84e4729837c7f5f2fe309bce8642d7ecfbbf21
+    icon: https://www.cluedin.net/favicon.png
+    kubeVersion: '>=1.21.0-0'
+    maintainers:
+    - email: support@cluedin.com
+      name: Support
+    name: cluedin-infrastructure
+    type: application
+    urls:
+    - charts/cluedin-infrastructure/1.3.4/cluedin-infrastructure-1.3.4.tgz
+    version: 1.3.4
+  - apiVersion: v2
+    appVersion: "2022.06"
+    created: "2022-10-12T15:59:01.687224633Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -842,7 +925,7 @@ entries:
     version: 1.3.3
   - apiVersion: v2
     appVersion: "2022.06"
-    created: "2022-10-12T15:53:13.165389553Z"
+    created: "2022-10-12T15:59:01.622886824Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -896,7 +979,7 @@ entries:
     version: 1.3.2
   - apiVersion: v2
     appVersion: "2022.06"
-    created: "2022-10-12T15:53:13.11802101Z"
+    created: "2022-10-12T15:59:01.562779464Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -950,7 +1033,7 @@ entries:
     version: 1.3.1
   - apiVersion: v2
     appVersion: "2022.06"
-    created: "2022-10-12T15:53:13.06871618Z"
+    created: "2022-10-12T15:59:01.487424491Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -1004,7 +1087,7 @@ entries:
     version: 1.3.0
   - apiVersion: v2
     appVersion: 3.3.2
-    created: "2022-10-12T15:53:13.020717441Z"
+    created: "2022-10-12T15:59:01.428624115Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -1058,7 +1141,7 @@ entries:
     version: 1.2.0
   - apiVersion: v2
     appVersion: 3.3.1
-    created: "2022-10-12T15:53:12.977128069Z"
+    created: "2022-10-12T15:59:01.362303331Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -1112,7 +1195,7 @@ entries:
     version: 1.1.0
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2022-10-12T15:53:12.935341483Z"
+    created: "2022-10-12T15:59:01.292132194Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -1166,7 +1249,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2022-10-12T15:53:12.891507012Z"
+    created: "2022-10-12T15:59:01.240275233Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -1220,7 +1303,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2022-10-12T15:53:12.846721749Z"
+    created: "2022-10-12T15:59:01.19089904Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -1274,7 +1357,7 @@ entries:
     version: 1.0.0
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2022-10-12T15:53:12.705196513Z"
+    created: "2022-10-12T15:59:01.130285386Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -1329,7 +1412,37 @@ entries:
   cluedin-platform:
   - apiVersion: v2
     appVersion: "2022.06"
-    created: "2022-10-12T15:53:14.005268139Z"
+    created: "2022-10-12T15:59:02.595515056Z"
+    dependencies:
+    - alias: common
+      name: cluedin-common
+      repository: file://../cluedin-common
+      version: 1.x.x
+    - alias: infrastructure
+      condition: infrastructure.enabled, global.infrastructure.enabled
+      name: cluedin-infrastructure
+      repository: file://../cluedin-infrastructure
+      version: x.x.x
+    - alias: application
+      condition: application.enabled, global.application.enabled
+      name: cluedin-application
+      repository: file://../cluedin-application
+      version: x.x.x
+    description: Deploys all parts of the CluedIn platform
+    digest: a80cb60b68c625f73ae7cbb507d43c4e052338d7a276e57ef1a79aa2032dd37b
+    icon: https://www.cluedin.net/favicon.png
+    kubeVersion: '>=1.21.0-0'
+    maintainers:
+    - email: support@cluedin.com
+      name: Support
+    name: cluedin-platform
+    type: application
+    urls:
+    - charts/cluedin-platform/1.3.4/cluedin-platform-1.3.4.tgz
+    version: 1.3.4
+  - apiVersion: v2
+    appVersion: "2022.06"
+    created: "2022-10-12T15:59:02.535162498Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -1359,7 +1472,7 @@ entries:
     version: 1.3.3
   - apiVersion: v2
     appVersion: "2022.06"
-    created: "2022-10-12T15:53:13.947457374Z"
+    created: "2022-10-12T15:59:02.474999239Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -1389,7 +1502,7 @@ entries:
     version: 1.3.2
   - apiVersion: v2
     appVersion: "2022.06"
-    created: "2022-10-12T15:53:13.892366788Z"
+    created: "2022-10-12T15:59:02.417023252Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -1419,7 +1532,7 @@ entries:
     version: 1.3.1
   - apiVersion: v2
     appVersion: "2022.06"
-    created: "2022-10-12T15:53:13.834394824Z"
+    created: "2022-10-12T15:59:02.36033585Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -1449,7 +1562,7 @@ entries:
     version: 1.3.0
   - apiVersion: v2
     appVersion: 3.3.2
-    created: "2022-10-12T15:53:13.77899704Z"
+    created: "2022-10-12T15:59:02.300889181Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -1479,7 +1592,7 @@ entries:
     version: 1.2.0
   - apiVersion: v2
     appVersion: 3.3.1
-    created: "2022-10-12T15:53:13.726392736Z"
+    created: "2022-10-12T15:59:02.24820083Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -1509,7 +1622,7 @@ entries:
     version: 1.1.0
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2022-10-12T15:53:13.671073052Z"
+    created: "2022-10-12T15:59:02.193568702Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -1539,7 +1652,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2022-10-12T15:53:13.620960328Z"
+    created: "2022-10-12T15:59:02.14411461Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -1569,7 +1682,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2022-10-12T15:53:13.568977419Z"
+    created: "2022-10-12T15:59:02.080306096Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -1599,7 +1712,7 @@ entries:
     version: 1.0.0
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2022-10-12T15:53:13.511813849Z"
+    created: "2022-10-12T15:59:02.015960787Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -1627,4 +1740,4 @@ entries:
     urls:
     - charts/cluedin-platform/1.0.0/cluedin-platform-1.0.0-beta.22.tgz
     version: 1.0.0-beta.22
-generated: "2022-10-12T15:53:13.449293519Z"
+generated: "2022-10-12T15:59:01.955929326Z"
