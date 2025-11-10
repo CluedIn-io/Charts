@@ -497,7 +497,7 @@ entries:
   cluedin-application:
   - apiVersion: v2
     appVersion: 2025.09.00
-    created: "2025-10-02T09:23:19.429753752Z"
+    created: "2025-11-10T17:35:47.174920564Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -526,7 +526,7 @@ entries:
     version: 2.6.0
   - apiVersion: v2
     appVersion: "2025.05"
-    created: "2025-10-02T09:23:19.422237718Z"
+    created: "2025-11-10T17:35:47.161362848Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -555,7 +555,7 @@ entries:
     version: 2.5.3
   - apiVersion: v2
     appVersion: "2025.05"
-    created: "2025-10-02T09:23:19.416409886Z"
+    created: "2025-11-10T17:35:47.151602128Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -584,7 +584,7 @@ entries:
     version: 2.5.2
   - apiVersion: v2
     appVersion: "2025.05"
-    created: "2025-10-02T09:23:19.398776902Z"
+    created: "2025-11-10T17:35:47.13746799Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -613,7 +613,7 @@ entries:
     version: 2.5.1
   - apiVersion: v2
     appVersion: "2025.05"
-    created: "2025-10-02T09:23:19.385531034Z"
+    created: "2025-11-10T17:35:47.122529687Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -642,7 +642,7 @@ entries:
     version: 2.5.0
   - apiVersion: v2
     appVersion: "2024.12"
-    created: "2025-10-02T09:23:19.373216402Z"
+    created: "2025-11-10T17:35:47.112261557Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -671,7 +671,7 @@ entries:
     version: 2.4.2
   - apiVersion: v2
     appVersion: "2024.12"
-    created: "2025-10-02T09:23:19.352369207Z"
+    created: "2025-11-10T17:35:47.099654254Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -700,7 +700,7 @@ entries:
     version: 2.4.1
   - apiVersion: v2
     appVersion: "2024.07"
-    created: "2025-10-02T09:23:19.341519536Z"
+    created: "2025-11-10T17:35:47.085909602Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -729,7 +729,7 @@ entries:
     version: 2.4.0
   - apiVersion: v2
     appVersion: "2024.07"
-    created: "2025-10-02T09:23:19.325115833Z"
+    created: "2025-11-10T17:35:47.076304923Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -758,7 +758,7 @@ entries:
     version: 2.4.0-rc.1
   - apiVersion: v2
     appVersion: "2024.07"
-    created: "2025-10-02T09:23:19.309437291Z"
+    created: "2025-11-10T17:35:47.069368853Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -787,7 +787,7 @@ entries:
     version: 2.3.2
   - apiVersion: v2
     appVersion: "2024.07"
-    created: "2025-10-02T09:23:19.29191326Z"
+    created: "2025-11-10T17:35:47.0635484Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -816,7 +816,7 @@ entries:
     version: 2.3.1
   - apiVersion: v2
     appVersion: "2024.07"
-    created: "2025-10-02T09:23:19.278150208Z"
+    created: "2025-11-10T17:35:47.056275301Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -845,7 +845,7 @@ entries:
     version: 2.3.0
   - apiVersion: v2
     appVersion: "2024.04"
-    created: "2025-10-02T09:23:19.267540384Z"
+    created: "2025-11-10T17:35:47.049363187Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -874,7 +874,7 @@ entries:
     version: 2.2.0
   - apiVersion: v2
     appVersion: "2024.01"
-    created: "2025-10-02T09:23:19.250858412Z"
+    created: "2025-11-10T17:35:47.042307411Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -903,7 +903,7 @@ entries:
     version: 2.1.0
   - apiVersion: v2
     appVersion: "2024.01"
-    created: "2025-10-02T09:23:19.239104395Z"
+    created: "2025-11-10T17:35:47.035331432Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -932,7 +932,7 @@ entries:
     version: 2.0.0
   - apiVersion: v2
     appVersion: "2023.07"
-    created: "2025-10-02T09:23:19.223793839Z"
+    created: "2025-11-10T17:35:47.028369433Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -961,7 +961,7 @@ entries:
     version: 1.6.0
   - apiVersion: v2
     appVersion: "2023.04"
-    created: "2025-10-02T09:23:19.207308484Z"
+    created: "2025-11-10T17:35:47.021903387Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -990,7 +990,7 @@ entries:
     version: 1.5.1
   - apiVersion: v2
     appVersion: "2023.04"
-    created: "2025-10-02T09:23:19.191672712Z"
+    created: "2025-11-10T17:35:47.015522386Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -1019,7 +1019,7 @@ entries:
     version: 1.5.0
   - apiVersion: v2
     appVersion: "2022.10"
-    created: "2025-10-02T09:23:19.180999385Z"
+    created: "2025-11-10T17:35:47.010698014Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -1048,7 +1048,7 @@ entries:
     version: 1.4.2
   - apiVersion: v2
     appVersion: "2022.10"
-    created: "2025-10-02T09:23:19.172838419Z"
+    created: "2025-11-10T17:35:47.004043279Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -1077,7 +1077,7 @@ entries:
     version: 1.4.1
   - apiVersion: v2
     appVersion: "2022.10"
-    created: "2025-10-02T09:23:19.165547486Z"
+    created: "2025-11-10T17:35:46.99768344Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -1106,7 +1106,7 @@ entries:
     version: 1.4.0
   - apiVersion: v2
     appVersion: "2022.06"
-    created: "2025-10-02T09:23:19.158858018Z"
+    created: "2025-11-10T17:35:46.991379512Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -1135,7 +1135,7 @@ entries:
     version: 1.3.5
   - apiVersion: v2
     appVersion: "2022.06"
-    created: "2025-10-02T09:23:19.151432819Z"
+    created: "2025-11-10T17:35:46.986496563Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -1164,7 +1164,7 @@ entries:
     version: 1.3.4
   - apiVersion: v2
     appVersion: "2022.06"
-    created: "2025-10-02T09:23:19.142485012Z"
+    created: "2025-11-10T17:35:46.980138367Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -1193,7 +1193,7 @@ entries:
     version: 1.3.3
   - apiVersion: v2
     appVersion: "2022.06"
-    created: "2025-10-02T09:23:19.133670764Z"
+    created: "2025-11-10T17:35:46.973772549Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -1222,7 +1222,7 @@ entries:
     version: 1.3.2
   - apiVersion: v2
     appVersion: "2022.06"
-    created: "2025-10-02T09:23:19.126523713Z"
+    created: "2025-11-10T17:35:46.967865848Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -1251,7 +1251,7 @@ entries:
     version: 1.3.1
   - apiVersion: v2
     appVersion: "2022.06"
-    created: "2025-10-02T09:23:19.116986122Z"
+    created: "2025-11-10T17:35:46.96323413Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -1280,7 +1280,7 @@ entries:
     version: 1.3.0
   - apiVersion: v2
     appVersion: 3.3.2
-    created: "2025-10-02T09:23:19.109167144Z"
+    created: "2025-11-10T17:35:46.956882513Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -1309,7 +1309,7 @@ entries:
     version: 1.2.0
   - apiVersion: v2
     appVersion: 3.3.1
-    created: "2025-10-02T09:23:19.101458752Z"
+    created: "2025-11-10T17:35:46.951156159Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -1338,7 +1338,7 @@ entries:
     version: 1.1.0
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2025-10-02T09:23:19.092410778Z"
+    created: "2025-11-10T17:35:46.946701943Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -1367,7 +1367,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2025-10-02T09:23:19.085559789Z"
+    created: "2025-11-10T17:35:46.940857334Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -1396,7 +1396,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2025-10-02T09:23:19.078509094Z"
+    created: "2025-11-10T17:35:46.935323113Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -1425,7 +1425,7 @@ entries:
     version: 1.0.0
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2025-10-02T09:23:19.070889998Z"
+    created: "2025-11-10T17:35:46.930968254Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -1455,7 +1455,7 @@ entries:
   cluedin-infrastructure:
   - apiVersion: v2
     appVersion: 2025.09.00
-    created: "2025-10-02T09:23:20.87743634Z"
+    created: "2025-11-10T17:35:48.680960275Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -1505,7 +1505,7 @@ entries:
     version: 2.6.0
   - apiVersion: v2
     appVersion: "2025.05"
-    created: "2025-10-02T09:23:20.8274011Z"
+    created: "2025-11-10T17:35:48.628800141Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -1555,7 +1555,7 @@ entries:
     version: 2.5.3
   - apiVersion: v2
     appVersion: "2025.05"
-    created: "2025-10-02T09:23:20.756296846Z"
+    created: "2025-11-10T17:35:48.56367363Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -1605,7 +1605,7 @@ entries:
     version: 2.5.2
   - apiVersion: v2
     appVersion: "2025.05"
-    created: "2025-10-02T09:23:20.722130822Z"
+    created: "2025-11-10T17:35:48.529833946Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -1655,7 +1655,7 @@ entries:
     version: 2.5.1
   - apiVersion: v2
     appVersion: "2025.05"
-    created: "2025-10-02T09:23:20.674701123Z"
+    created: "2025-11-10T17:35:48.480364082Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -1705,7 +1705,7 @@ entries:
     version: 2.5.0
   - apiVersion: v2
     appVersion: "2024.12"
-    created: "2025-10-02T09:23:20.628879701Z"
+    created: "2025-11-10T17:35:48.432577946Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -1755,7 +1755,7 @@ entries:
     version: 2.4.2
   - apiVersion: v2
     appVersion: "2024.12"
-    created: "2025-10-02T09:23:20.576086986Z"
+    created: "2025-11-10T17:35:48.386805682Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -1805,7 +1805,7 @@ entries:
     version: 2.4.1
   - apiVersion: v2
     appVersion: "2024.07"
-    created: "2025-10-02T09:23:20.522613378Z"
+    created: "2025-11-10T17:35:48.335851368Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -1855,7 +1855,7 @@ entries:
     version: 2.4.0
   - apiVersion: v2
     appVersion: "2024.07"
-    created: "2025-10-02T09:23:20.487457645Z"
+    created: "2025-11-10T17:35:48.300142744Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -1905,7 +1905,7 @@ entries:
     version: 2.4.0-rc.1
   - apiVersion: v2
     appVersion: "2024.07"
-    created: "2025-10-02T09:23:20.450205054Z"
+    created: "2025-11-10T17:35:48.264880758Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -1955,7 +1955,7 @@ entries:
     version: 2.3.2
   - apiVersion: v2
     appVersion: "2024.07"
-    created: "2025-10-02T09:23:20.406776081Z"
+    created: "2025-11-10T17:35:48.219476388Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -2005,7 +2005,7 @@ entries:
     version: 2.3.1
   - apiVersion: v2
     appVersion: "2024.07"
-    created: "2025-10-02T09:23:20.367829533Z"
+    created: "2025-11-10T17:35:48.183938579Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -2055,7 +2055,7 @@ entries:
     version: 2.3.0
   - apiVersion: v2
     appVersion: "2024.04"
-    created: "2025-10-02T09:23:20.331365501Z"
+    created: "2025-11-10T17:35:48.148235139Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -2105,7 +2105,7 @@ entries:
     version: 2.2.0
   - apiVersion: v2
     appVersion: "2024.01"
-    created: "2025-10-02T09:23:20.29209019Z"
+    created: "2025-11-10T17:35:48.111108347Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -2155,7 +2155,7 @@ entries:
     version: 2.1.0
   - apiVersion: v2
     appVersion: "2024.01"
-    created: "2025-10-02T09:23:20.258085092Z"
+    created: "2025-11-10T17:35:48.077262949Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -2205,7 +2205,7 @@ entries:
     version: 2.0.0
   - apiVersion: v2
     appVersion: "2023.07"
-    created: "2025-10-02T09:23:20.224406195Z"
+    created: "2025-11-10T17:35:48.040142436Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -2255,7 +2255,7 @@ entries:
     version: 1.6.0
   - apiVersion: v2
     appVersion: "2023.04"
-    created: "2025-10-02T09:23:20.189532328Z"
+    created: "2025-11-10T17:35:48.002782089Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -2305,7 +2305,7 @@ entries:
     version: 1.5.1
   - apiVersion: v2
     appVersion: "2023.04"
-    created: "2025-10-02T09:23:20.154389915Z"
+    created: "2025-11-10T17:35:47.969165419Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -2355,7 +2355,7 @@ entries:
     version: 1.5.0
   - apiVersion: v2
     appVersion: "2022.10"
-    created: "2025-10-02T09:23:20.119925381Z"
+    created: "2025-11-10T17:35:47.934921934Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -2409,7 +2409,7 @@ entries:
     version: 1.4.2
   - apiVersion: v2
     appVersion: "2022.10"
-    created: "2025-10-02T09:23:20.087187087Z"
+    created: "2025-11-10T17:35:47.902590551Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -2463,7 +2463,7 @@ entries:
     version: 1.4.1
   - apiVersion: v2
     appVersion: "2022.10"
-    created: "2025-10-02T09:23:20.054321889Z"
+    created: "2025-11-10T17:35:47.868132499Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -2517,7 +2517,7 @@ entries:
     version: 1.4.0
   - apiVersion: v2
     appVersion: "2022.06"
-    created: "2025-10-02T09:23:20.017479777Z"
+    created: "2025-11-10T17:35:47.833723138Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -2571,7 +2571,7 @@ entries:
     version: 1.3.5
   - apiVersion: v2
     appVersion: "2022.06"
-    created: "2025-10-02T09:23:19.982868484Z"
+    created: "2025-11-10T17:35:47.797284142Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -2625,7 +2625,7 @@ entries:
     version: 1.3.4
   - apiVersion: v2
     appVersion: "2022.06"
-    created: "2025-10-02T09:23:19.949545211Z"
+    created: "2025-11-10T17:35:47.763378304Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -2679,7 +2679,7 @@ entries:
     version: 1.3.3
   - apiVersion: v2
     appVersion: "2022.06"
-    created: "2025-10-02T09:23:19.915528487Z"
+    created: "2025-11-10T17:35:47.727616227Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -2733,7 +2733,7 @@ entries:
     version: 1.3.2
   - apiVersion: v2
     appVersion: "2022.06"
-    created: "2025-10-02T09:23:19.880155032Z"
+    created: "2025-11-10T17:35:47.680160166Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -2787,7 +2787,7 @@ entries:
     version: 1.3.1
   - apiVersion: v2
     appVersion: "2022.06"
-    created: "2025-10-02T09:23:19.826302412Z"
+    created: "2025-11-10T17:35:47.617363456Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -2841,7 +2841,7 @@ entries:
     version: 1.3.0
   - apiVersion: v2
     appVersion: 3.3.2
-    created: "2025-10-02T09:23:19.755207766Z"
+    created: "2025-11-10T17:35:47.552750234Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -2895,7 +2895,7 @@ entries:
     version: 1.2.0
   - apiVersion: v2
     appVersion: 3.3.1
-    created: "2025-10-02T09:23:19.693797229Z"
+    created: "2025-11-10T17:35:47.49823515Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -2949,7 +2949,7 @@ entries:
     version: 1.1.0
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2025-10-02T09:23:19.651853801Z"
+    created: "2025-11-10T17:35:47.449452851Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -3003,7 +3003,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2025-10-02T09:23:19.618034152Z"
+    created: "2025-11-10T17:35:47.417571392Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -3057,7 +3057,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2025-10-02T09:23:19.588230735Z"
+    created: "2025-11-10T17:35:47.386644032Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -3111,7 +3111,7 @@ entries:
     version: 1.0.0
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2025-10-02T09:23:19.553120907Z"
+    created: "2025-11-10T17:35:47.349935128Z"
     dependencies:
     - condition: elasticsearch.enabled, global.elasticsearch.enabled
       name: elasticsearch
@@ -3166,7 +3166,7 @@ entries:
   cluedin-platform:
   - apiVersion: v2
     appVersion: 2025.09.00
-    created: "2025-10-02T09:23:18.934087777Z"
+    created: "2025-11-10T17:35:46.833459598Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -3196,7 +3196,7 @@ entries:
     version: 2.6.0
   - apiVersion: v2
     appVersion: "2025.05"
-    created: "2025-10-02T09:23:18.876675642Z"
+    created: "2025-11-10T17:35:46.776297936Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -3226,7 +3226,7 @@ entries:
     version: 2.5.3
   - apiVersion: v2
     appVersion: "2025.05"
-    created: "2025-10-02T09:23:18.801402929Z"
+    created: "2025-11-10T17:35:46.702372337Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -3256,7 +3256,7 @@ entries:
     version: 2.5.2
   - apiVersion: v2
     appVersion: "2025.05"
-    created: "2025-10-02T09:23:18.759677913Z"
+    created: "2025-11-10T17:35:46.65959415Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -3286,7 +3286,7 @@ entries:
     version: 2.5.1
   - apiVersion: v2
     appVersion: "2025.05"
-    created: "2025-10-02T09:23:18.699869361Z"
+    created: "2025-11-10T17:35:46.599942835Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -3316,7 +3316,7 @@ entries:
     version: 2.5.0
   - apiVersion: v2
     appVersion: "2024.12"
-    created: "2025-10-02T09:23:18.645078963Z"
+    created: "2025-11-10T17:35:46.544898509Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -3346,7 +3346,7 @@ entries:
     version: 2.4.2
   - apiVersion: v2
     appVersion: "2024.12"
-    created: "2025-10-02T09:23:18.586848183Z"
+    created: "2025-11-10T17:35:46.489845822Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -3376,7 +3376,7 @@ entries:
     version: 2.4.1
   - apiVersion: v2
     appVersion: "2024.07"
-    created: "2025-10-02T09:23:18.530648334Z"
+    created: "2025-11-10T17:35:46.426037169Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -3406,7 +3406,7 @@ entries:
     version: 2.4.0
   - apiVersion: v2
     appVersion: "2024.07"
-    created: "2025-10-02T09:23:18.487396545Z"
+    created: "2025-11-10T17:35:46.383716298Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -3436,7 +3436,7 @@ entries:
     version: 2.4.0-rc.1
   - apiVersion: v2
     appVersion: "2024.07"
-    created: "2025-10-02T09:23:18.437931839Z"
+    created: "2025-11-10T17:35:46.340574635Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -3466,7 +3466,7 @@ entries:
     version: 2.3.2
   - apiVersion: v2
     appVersion: "2024.07"
-    created: "2025-10-02T09:23:18.3857483Z"
+    created: "2025-11-10T17:35:46.289695249Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -3496,7 +3496,7 @@ entries:
     version: 2.3.1
   - apiVersion: v2
     appVersion: "2024.07"
-    created: "2025-10-02T09:23:18.344896585Z"
+    created: "2025-11-10T17:35:46.248428646Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -3526,7 +3526,7 @@ entries:
     version: 2.3.0
   - apiVersion: v2
     appVersion: "2024.04"
-    created: "2025-10-02T09:23:18.30466416Z"
+    created: "2025-11-10T17:35:46.207730001Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -3556,7 +3556,7 @@ entries:
     version: 2.2.0
   - apiVersion: v2
     appVersion: "2024.01"
-    created: "2025-10-02T09:23:18.265713971Z"
+    created: "2025-11-10T17:35:46.163379853Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -3586,7 +3586,7 @@ entries:
     version: 2.1.0
   - apiVersion: v2
     appVersion: "2024.01"
-    created: "2025-10-02T09:23:18.221110298Z"
+    created: "2025-11-10T17:35:46.119147141Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -3616,7 +3616,7 @@ entries:
     version: 2.0.0
   - apiVersion: v2
     appVersion: "2023.07"
-    created: "2025-10-02T09:23:18.175845398Z"
+    created: "2025-11-10T17:35:46.078990595Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -3646,7 +3646,7 @@ entries:
     version: 1.6.0
   - apiVersion: v2
     appVersion: "2023.04"
-    created: "2025-10-02T09:23:18.136195194Z"
+    created: "2025-11-10T17:35:46.036464162Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -3676,7 +3676,7 @@ entries:
     version: 1.5.1
   - apiVersion: v2
     appVersion: "2023.04"
-    created: "2025-10-02T09:23:18.095152453Z"
+    created: "2025-11-10T17:35:45.994627466Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -3706,7 +3706,7 @@ entries:
     version: 1.5.0
   - apiVersion: v2
     appVersion: "2022.10"
-    created: "2025-10-02T09:23:18.055270882Z"
+    created: "2025-11-10T17:35:45.953658401Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -3736,7 +3736,7 @@ entries:
     version: 1.4.2
   - apiVersion: v2
     appVersion: "2022.10"
-    created: "2025-10-02T09:23:18.014576125Z"
+    created: "2025-11-10T17:35:45.913007796Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -3766,7 +3766,7 @@ entries:
     version: 1.4.1
   - apiVersion: v2
     appVersion: "2022.10"
-    created: "2025-10-02T09:23:17.976900496Z"
+    created: "2025-11-10T17:35:45.872155715Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -3796,7 +3796,7 @@ entries:
     version: 1.4.0
   - apiVersion: v2
     appVersion: "2022.06"
-    created: "2025-10-02T09:23:17.934366667Z"
+    created: "2025-11-10T17:35:45.831649934Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -3826,7 +3826,7 @@ entries:
     version: 1.3.5
   - apiVersion: v2
     appVersion: "2022.06"
-    created: "2025-10-02T09:23:17.890374735Z"
+    created: "2025-11-10T17:35:45.787993891Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -3856,7 +3856,7 @@ entries:
     version: 1.3.4
   - apiVersion: v2
     appVersion: "2022.06"
-    created: "2025-10-02T09:23:17.842895844Z"
+    created: "2025-11-10T17:35:45.744986758Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -3886,7 +3886,7 @@ entries:
     version: 1.3.3
   - apiVersion: v2
     appVersion: "2022.06"
-    created: "2025-10-02T09:23:17.803668547Z"
+    created: "2025-11-10T17:35:45.701382262Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -3916,7 +3916,7 @@ entries:
     version: 1.3.2
   - apiVersion: v2
     appVersion: "2022.06"
-    created: "2025-10-02T09:23:17.76062567Z"
+    created: "2025-11-10T17:35:45.66199933Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -3946,7 +3946,7 @@ entries:
     version: 1.3.1
   - apiVersion: v2
     appVersion: "2022.06"
-    created: "2025-10-02T09:23:17.722573122Z"
+    created: "2025-11-10T17:35:45.620679947Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -3976,7 +3976,7 @@ entries:
     version: 1.3.0
   - apiVersion: v2
     appVersion: 3.3.2
-    created: "2025-10-02T09:23:17.681332032Z"
+    created: "2025-11-10T17:35:45.582106679Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -4006,7 +4006,7 @@ entries:
     version: 1.2.0
   - apiVersion: v2
     appVersion: 3.3.1
-    created: "2025-10-02T09:23:17.644874863Z"
+    created: "2025-11-10T17:35:45.545302133Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -4036,7 +4036,7 @@ entries:
     version: 1.1.0
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2025-10-02T09:23:17.609736433Z"
+    created: "2025-11-10T17:35:45.50765924Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -4066,7 +4066,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2025-10-02T09:23:17.573552047Z"
+    created: "2025-11-10T17:35:45.472719276Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -4096,7 +4096,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2025-10-02T09:23:17.527526911Z"
+    created: "2025-11-10T17:35:45.434497727Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -4126,7 +4126,7 @@ entries:
     version: 1.0.0
   - apiVersion: v2
     appVersion: 3.3.0
-    created: "2025-10-02T09:23:17.480048365Z"
+    created: "2025-11-10T17:35:45.385043114Z"
     dependencies:
     - alias: common
       name: cluedin-common
@@ -4154,4 +4154,4 @@ entries:
     urls:
     - charts/cluedin-platform/1.0.0/cluedin-platform-1.0.0-beta.22.tgz
     version: 1.0.0-beta.22
-generated: "2025-10-02T09:23:19.514826294Z"
+generated: "2025-11-10T17:35:47.312198966Z"
