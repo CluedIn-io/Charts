@@ -1,0 +1,553 @@
+---
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  # name must match the spec fields below, and be in the form: <plural>.<group>
+  name: dataupgrades.api.cluedin.com
+  labels:
+    app: cluedin
+spec:
+  # group name to use for REST API: /apis/<group>/<version>
+  group: api.cluedin.com
+  # list of versions supported by this CustomResourceDefinition
+  versions:
+    - name: v1
+      # Each version can be enabled/disabled by Served flag.
+      served: true
+      # One and only one version must be marked as the storage version.
+      storage: true
+      schema:
+        openAPIV3Schema:
+          type: object
+          properties:
+            spec:
+              type: object
+              properties:
+                toVersion:
+                  type: string
+            status:
+              type: object
+              properties:
+                phase:
+                  type: string
+                message:
+                  type: string
+      additionalPrinterColumns:
+        - jsonPath: .spec.toVersion
+          name: 'To Version'
+          description: 'Version to upgrade data to'
+          type: string
+        - name: Phase
+          type: string
+          jsonPath: '.status.phase'
+        - name: Status
+          type: string
+          jsonPath: '.status.message'
+      subresources:
+        status: {}
+  # either Namespaced or Cluster
+  scope: Namespaced
+  names:
+    # plural name to be used in the URL: /apis/<group>/<version>/<plural>
+    plural: dataupgrades
+    # singular name to be used as an alias on the CLI and for display
+    singular: dataupgrade
+    # kind is normally the CamelCased singular type. Your resource manifests use this.
+    kind: DataUpgrade
+    # shortNames allow shorter string to match your resource on the CLI
+    shortNames:
+      - du
+---
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  # name must match the spec fields below, and be in the form: <plural>.<group>
+  name: datasourcegroups.api.cluedin.com
+  labels:
+    app: cluedin
+spec:
+  # group name to use for REST API: /apis/<group>/<version>
+  group: api.cluedin.com
+  # list of versions supported by this CustomResourceDefinition
+  versions:
+    - name: v1
+      # Each version can be enabled/disabled by Served flag.
+      served: true
+      # One and only one version must be marked as the storage version.
+      storage: true
+      schema:
+        openAPIV3Schema:
+          type: object
+          properties:
+            spec:
+              type:  object
+              properties:
+                id:
+                  type: string
+                name:
+                  type: string
+                userSecret:
+                  type: string
+                organization:
+                  type: string
+                dataSources:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                      name:
+                        type: string
+                      path:
+                        type: string
+                      remoteUrl:
+                        type: string
+                      entityType:
+                        type: string
+                      dataSetId:
+                        type: string
+                settings:
+                  type: object
+                  properties:
+                    autoCreateAnnotation:
+                      type: boolean
+                    autoSubmitDataSets:
+                      type: boolean
+            status:
+              type: object
+              properties:
+                phase:
+                  type: string
+                message:
+                  type: string
+      additionalPrinterColumns:
+        - jsonPath: .spec.organization
+          name: 'Organization'
+          description: 'Organization name'
+          type: string
+        - jsonPath: .spec.userSecret
+          name: 'User Secret'
+          description: 'The access secret of the user'
+          type: string
+        - jsonPath: .spec.settings.autoCreateAnnotation
+          name: 'Create Annotation ?'
+          description: 'Should the system automatically create a simple annotation?'
+          type: boolean
+        - jsonPath: .spec.settings.autoSubmitDataSets
+          name: 'Submit Datasets ?'
+          description: 'Should the system automatically submit the data sets?'
+          type: boolean
+        - name: Phase
+          type: string
+          jsonPath: '.status.phase'
+        - name: Status
+          type: string
+          jsonPath: '.status.message'
+      subresources:
+        status: {}
+  # either Namespaced or Cluster
+  scope: Namespaced
+  names:
+    # plural name to be used in the URL: /apis/<group>/<version>/<plural>
+    plural: datasourcegroups
+    # singular name to be used as an alias on the CLI and for display
+    singular: datasourcegroup
+    # kind is normally the CamelCased singular type. Your resource manifests use this.
+    kind: DataSourceGroup
+    # shortNames allow shorter string to match your resource on the CLI
+    shortNames:
+      - dsg
+---
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  # name must match the spec fields below, and be in the form: <plural>.<group>
+  name: sendmails.api.cluedin.com
+  labels:
+    app: cluedin
+spec:
+  # group name to use for REST API: /apis/<group>/<version>
+  group: api.cluedin.com
+  # list of versions supported by this CustomResourceDefinition
+  versions:
+    - name: v1
+      # Each version can be enabled/disabled by Served flag.
+      served: true
+      # One and only one version must be marked as the storage version.
+      storage: true
+      schema:
+        openAPIV3Schema:
+          type: object
+          properties:
+            spec:
+              type: object
+              properties:
+                id:
+                  type: string
+                emailSecret:
+                  type: string
+                emailTemplateResource:
+                  type: string
+              required:
+                - emailSecret
+                - emailTemplateResource
+            status:
+              type: object
+              properties:
+                phase:
+                  type: string
+                message:
+                  type: string
+      additionalPrinterColumns:
+        - jsonPath: .spec.emailSecret
+          name: 'Email Secret'
+          description: 'Email login details secret'
+          type: string
+        - jsonPath: .spec.emailTemplateResource
+          name: 'Email Template'
+          description: 'Email template configmap'
+          type: string
+        - name: Phase
+          type: string
+          jsonPath: '.status.phase'
+        - name: Status
+          type: string
+          jsonPath: '.status.message'
+      subresources:
+        status: {}
+  # either Namespaced or Cluster
+  scope: Namespaced
+  names:
+    # plural name to be used in the URL: /apis/<group>/<version>/<plural>
+    plural: sendmails
+    # singular name to be used as an alias on the CLI and for display
+    singular: sendmail
+    # kind is normally the CamelCased singular type. Your resource manifests use this.
+    kind: SendMail
+    # shortNames allow shorter string to match your resource on the CLI
+    shortNames:
+      - sm
+---
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  # name must match the spec fields below, and be in the form: <plural>.<group>
+  name: features.api.cluedin.com
+  labels:
+    app: cluedin
+spec:
+  # group name to use for REST API: /apis/<group>/<version>
+  group: api.cluedin.com
+  # list of versions supported by this CustomResourceDefinition
+  versions:
+    - name: v1
+      # Each version can be enabled/disabled by Served flag.
+      served: true
+      # One and only one version must be marked as the storage version.
+      storage: true
+      schema:
+        openAPIV3Schema:
+          type: object
+          properties:
+            spec:
+              type: object
+              properties:
+                enableSso:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                    clientId:
+                      type: string
+                    clientSecretName:
+                      type: string
+                    clientSecretKey:
+                      type: string
+                    organizationName:
+                      type: string
+            status:
+              type: object
+              properties:
+                phase:
+                  type: string
+                message:
+                  type: string
+      additionalPrinterColumns:
+        - jsonPath: .spec.enableSso.id
+          name: 'SSO - Registration ID'
+          description: 'The ID of the Single-Sign-On registration.'
+          type: string
+        - jsonPath: .spec.enableSso.clientId
+          name: 'SSO - Client ID'
+          description: 'The ID of the Single-Sign-On client.'
+          type: string
+        - name: Phase
+          type: string
+          jsonPath: '.status.phase'
+        - name: Status
+          type: string
+          jsonPath: '.status.message'
+      subresources:
+        status: {}
+  # either Namespaced or Cluster
+  scope: Namespaced
+  names:
+    # plural name to be used in the URL: /apis/<group>/<version>/<plural>
+    plural: features
+    # singular name to be used as an alias on the CLI and for display
+    singular: feature
+    # kind is normally the CamelCased singular type. Your resource manifests use this.
+    kind: Feature
+    # shortNames allow shorter string to match your resource on the CLI
+    shortNames:
+      - feat
+      - feats
+---
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  # name must match the spec fields below, and be in the form: <plural>.<group>
+  name: organizations.api.cluedin.com
+  labels:
+    app: cluedin
+spec:
+  # group name to use for REST API: /apis/<group>/<version>
+  group: api.cluedin.com
+  # list of versions supported by this CustomResourceDefinition
+  versions:
+    - name: v1
+      # Each version can be enabled/disabled by Served flag.
+      served: true
+      # One and only one version must be marked as the storage version.
+      storage: true
+      schema:
+        openAPIV3Schema:
+          type: object
+          properties:
+            spec:
+              type: object
+              properties:
+                name:
+                  type: string
+                adminUserSecret:
+                  type: string
+                id:
+                  type: string
+            status:
+              type: object
+              properties:
+                phase:
+                  type: string
+                message:
+                  type: string
+      additionalPrinterColumns:
+        - jsonPath: .spec.name
+          name: 'Organization Name'
+          description: 'The name of the organization'
+          type: string
+        - jsonPath: .spec.adminUserSecret
+          name: 'Admin User Secret'
+          description: 'The secret containing the username & password of the admin user'
+          type: string
+        - jsonPath: .spec.id
+          name: 'Organization Id'
+          description: 'Id of the organization'
+          type: string
+        - name: Phase
+          type: string
+          jsonPath: '.status.phase'
+        - name: Status
+          type: string
+          jsonPath: '.status.message'
+      subresources:
+        status: {}
+  # either Namespaced or Cluster
+  scope: Namespaced
+  names:
+    # plural name to be used in the URL: /apis/<group>/<version>/<plural>
+    plural: organizations
+    # singular name to be used as an alias on the CLI and for display
+    singular: organization
+    # kind is normally the CamelCased singular type. Your resource manifests use this.
+    kind: Organization
+    # shortNames allow shorter string to match your resource on the CLI
+    shortNames:
+      - org
+      - orgs
+---
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  # name must match the spec fields below, and be in the form: <plural>.<group>
+  name: sqlservertargets.api.cluedin.com
+  labels:
+    app: cluedin
+spec:
+  # group name to use for REST API: /apis/<group>/<version>
+  group: api.cluedin.com
+  # list of versions supported by this CustomResourceDefinition
+  versions:
+    - name: v1
+      # Each version can be enabled/disabled by Served flag.
+      served: true
+      # One and only one version must be marked as the storage version.
+      storage: true
+      schema:
+        openAPIV3Schema:
+          type: object
+          properties:
+            spec:
+              type: object
+              properties:
+                id:
+                  type: string
+                databaseHost:
+                  type: string
+                databaseName:
+                  type: string
+                databasePort:
+                  type: integer
+                  default: 1433
+                databaseCreateSecret:
+                  type: string
+                databaseWriteSecret:
+                  type: string
+                databaseReadSecret:
+                  type: string
+                organization:
+                  type: string
+                userSecret:
+                  type: string
+              required:
+                - databaseName
+                - organization
+                - userSecret
+                - databaseWriteSecret
+                - databaseReadSecret
+            status:
+              type: object
+              properties:
+                phase:
+                  type: string
+                message:
+                  type: string
+      additionalPrinterColumns:
+        - jsonPath: .spec.organization
+          name: 'Organization'
+          description: 'Organization name'
+          type: string
+        - jsonPath: .spec.databaseName
+          name: 'SQL Server Database Name'
+          description: 'SQL Server database to write the data to'
+          type: string
+        - jsonPath: .spec.databaseHost
+          name: 'SQL Server Host'
+          description: 'SQL Server Host'
+          type: string
+        - name: Phase
+          type: string
+          jsonPath: '.status.phase'
+        - name: Status
+          type: string
+          jsonPath: '.status.message'
+      subresources:
+        status: {}
+  # either Namespaced or Cluster
+  scope: Namespaced
+  names:
+    # plural name to be used in the URL: /apis/<group>/<version>/<plural>
+    plural: sqlservertargets
+    # singular name to be used as an alias on the CLI and for display
+    singular: sqlservertarget
+    # kind is normally the CamelCased singular type. Your resource manifests use this.
+    kind: SqlServerTarget
+    # shortNames allow shorter string to match your resource on the CLI
+    shortNames:
+      - sqlt
+      - sqlts
+---
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  # name must match the spec fields below, and be in the form: <plural>.<group>
+  name: trialsettings.api.cluedin.com
+  labels:
+    app: cluedin
+spec:
+  # group name to use for REST API: /apis/<group>/<version>
+  group: api.cluedin.com
+  # list of versions supported by this CustomResourceDefinition
+  versions:
+    - name: v1
+      # Each version can be enabled/disabled by Served flag.
+      served: true
+      # One and only one version must be marked as the storage version.
+      storage: true
+      schema:
+        openAPIV3Schema:
+          type: object
+          properties:
+            spec:
+              type: object
+              properties:
+                id:
+                  type: string
+                organizationResource:
+                  type: string
+                exportTargetResource:
+                  type: string
+                emailSecret:
+                  type: string
+                emailTemplateResource:
+                  type: string
+              required:
+                - organizationResource
+                - exportTargetResource
+                - emailSecret
+                - emailTemplateResource
+            status:
+              type: object
+              properties:
+                phase:
+                  type: string
+                message:
+                  type: string
+      additionalPrinterColumns:
+        - jsonPath: .spec.organizationResource
+          name: 'Organization'
+          description: 'Organization resource name'
+          type: string
+        - jsonPath: .spec.exportTargetResource
+          name: 'Export Target'
+          description: 'Export Target resource name'
+          type: string
+        - jsonPath: .spec.emailSecret
+          name: 'Email Secret'
+          description: 'Email login details secret'
+          type: string
+        - jsonPath: .spec.emailTemplateResource
+          name: 'Email Template'
+          description: 'Email template configmap'
+          type: string
+        - name: Phase
+          type: string
+          jsonPath: '.status.phase'
+        - name: Status
+          type: string
+          jsonPath: '.status.message'
+      subresources:
+        status: {}
+  # either Namespaced or Cluster
+  scope: Namespaced
+  names:
+    # plural name to be used in the URL: /apis/<group>/<version>/<plural>
+    plural: trialsettings
+    # singular name to be used as an alias on the CLI and for display
+    singular: trailsetting
+    # kind is normally the CamelCased singular type. Your resource manifests use this.
+    kind: TrialSetting
+    # shortNames allow shorter string to match your resource on the CLI
+    shortNames:
+      - tr
+      - trs
